@@ -25,7 +25,7 @@
 <p align="center"><a href="https://openclassrooms.com/fr/courses/7697016-creez-des-pages-web-dynamiques-avec-javascript?archived-source=5543061"> <img src="https://img.shields.io/badge/MODULE_2- Créez des pages web dynamiques avec JavaScript -F6BF26" width="600"> </a></p>
 
 	
-	15h	🍓 1 Apprenez à programmer avec JavaScript 			📌📌📌📌	
+	15h	🥑 2 Créez des pages web dynamiques avec JavaScript 	📌🖋📌🖋📌🖋📌🖋📌	
 	
 Table des matières
 
