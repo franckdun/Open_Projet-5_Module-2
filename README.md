@@ -78,7 +78,7 @@ Table des matières
 ```
 	
 ```		
-    Certificat de réussite (voir un exemple)
+    Certificat de réussite
 ```
 
 
