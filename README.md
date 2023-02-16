@@ -30,49 +30,54 @@
 Table des matières
 
 ```	
-    Partie 1 - Utilisez les données et les types de données dans JavaScript
+    Partie 1 - Créez une page web à partir de données existantes 
 	
         1. Tirez un maximum de ce cours
-        2. Déclarez des variables et modifiez leurs valeurs
-        3. Enregistrez vos données avec des types de données
-        4. Définissez des objets et leurs attributs avec des classes
-        5. Regroupez vos données avec les tableaux et les objets
-        6. Résumé de la partie 1
+        2. Préparez votre projet
+        3. Exploitez des données au format JSON
+        4. Générez le contenu de votre page grâce au DOM
 	
-        Quiz : Vérifiez ce que vous avez appris sur les données et les types !
+        Quiz : Créer une page web à partir de données existantes
 ```
 	
 ```	
-    Partie 2 - Gérez la logique d'un programme en JavaScript
+    Partie 2 - Rendez votre page web interactive
 	
-        1. Exécutez du JavaScript facilement
-        2. Choisissez la condition appropriée pour contrôler le déroulement de votre programme (if, else, switch)
-        3. Utilisez la bonne boucle pour répéter les tâches (for, while)
-        4. Gérez des erreurs et des exceptions dans votre programme
-        5. Résumé de la partie 2
+        1. Manipulez les listes en JavaScript
+        2. Projetez des données avec la fonction map
+        3. Mettez à jour l’affichage de la page web
 	
-        Quiz : Vérifiez ce que vous avez appris sur la logique informatique !
+        Quiz :  Rendre une page web interactive !
 ```
 	
 ```	
-    Partie 3 - Écrivez du code propre et facile à maintenir
+    Partie 3 - Interagissez avec un service web en utilisant une API HTTP
 	
-        1. Travaillez sur les fonctions
-        2. Définissez des méthodes d'instance et des propriétés
-        3. Écrivez des fonctions propres
-        4. Testez qu'une fonction fait ce qu'elle dit
-        5. Déboguez votre fonction
-        6. Découvrez la récursivité : l'appel de fonctions à l'intérieur d'elles-mêmes
-        7. Résumé de la partie 3
+        1. Envoyez une requête depuis le navigateur
+        2. Traitez la réponse du serveur
+        3. Sauvegardez les données grâce à une API HTTP
+        4. Sauvegardez les données dans le localStorage
 	
-        Quiz : Aidez à créer une application de suivi de livres pour les lecteurs !
+        Quiz : Interagir avec un site web en utilisant une API HTTP !
 ```
 	
 ```	
-    Partie 4 - Retenez les notions du cours
+    Partie 4 - Enrichissez votre page web grâce aux librairies 
 	
-        1. Résumé du cours
+        1. Choisissez une librairie adaptée aux besoins de votre projet
+		2. Installez la librairie grâce au gestionnaire de paquets NPM
+		3. Utilisez la librairie pour enrichir votre projet
+		
+		Quiz : Enrichir une page web grâce aux librairies
+```
 	
+```	
+	Patie 5 - Rendez votre code plus lisible grâce au Linter 
+		
+		1. Vérifiez que votre code respecte les conventions de codage
+```
+	
+```		
     Certificat de réussite (voir un exemple)
 ```
 
