@@ -72,7 +72,7 @@ Table des matières
 ```
 	
 ```	
-	Patie 5 - Rendez votre code plus lisible grâce au Linter 
+	Partie 5 - Rendez votre code plus lisible grâce au Linter 
 		
 		1. Vérifiez que votre code respecte les conventions de codage
 ```
