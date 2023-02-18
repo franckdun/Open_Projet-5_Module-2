@@ -1,0 +1,56 @@
+question-1 = 2
+
+Pour communiquer avec une API en ligne, vous devez utiliser le format JSON. Les autres réponses ne sont donc pas valides.
+
+question-2 = 3
+
+Quand vous démarrez un nouveau projet web, la solution la plus adaptée est d’utiliser le format 
+SQL sur un serveur de base de données. Vous pourrez ainsi modéliser les données en fonction de vos besoins.
+
+Le CSV n’est pas conseillé ici car il ne permet pas de structurer l’information correctement. 
+Enfin, le format JSON à travers une API est utilisé pour communiquer avec d’autres sites web. 
+Or, dans notre cas,  on développe notre propre site de zéro.
+
+question-3 = 2
+
+Dans un objet, les virgules servent à séparer les propriétés. 
+Pour corriger ce morceau de code, vous devez donc retirer la virgule après la valeur du niveau, 
+car il n’y a pas d’autre propriété par la suite.
+
+En revanche, ne mettez pas d’accents dans les propriétés des objets : 
+cela pourrait compliquer la collaboration avec d’autres développeurs à l’international. 
+Le JSON n’accepte que les guillemets doubles dans sa syntaxe, il ne fallait donc pas y toucher.
+
+question-4 = 1
+
+En JSON, une liste se délimite par des crochets ouvrant et fermant. 
+Vous devez donc écrire : [7.90, 8.20, 9.50].
+Les autres symboles ne sont pas adaptés pour créer une liste de nombres.
+
+question-5 = 1
+
+C’est vrai. Pour générer le contenu d’une page web, vous devez créer les éléments puis les rattacher à un parent. 
+On ne peut pas rattacher des éléments qui ne sont pas encore créés.
+
+question-6 =2
+
+Pour créer un élément, vous devez utiliser la fonction document.createElement. 
+Puis vous devez ajouter l’élément créé à la page, 
+en utilisant la fonction appendChild. Vous utiliserez donc le code : 
+
+const resume = document.createElement("p");
+document.body.appendChild(resume);
+
+question-7 = 3
+
+Lorsque le JSON ne contient pas l’information du nombre de points de vie restaurés, 
+la propriété nbPtVie n’existe pas sur l’objet potion. Le code potion.nbPtVie produira donc la valeur undefined. 
+L’opérateur nullish ?? détectera la valeur undefined et fournira la valeur de substitution. 
+En revanche, les deux autres propositions font une substitution :
+ elles ne permettent pas de fournir une information par défaut.
+
+question-8 = 1
+
+Pour raccourcir la chaîne à 20 caractères, vous devez utiliser l’opérateur ternaire. 
+Ce dernier permet de tester une condition (chaine.length > 20), et de fournir la valeur souhaitée en fonction du résultat de la condition. 
+Les deux autres réponses contenaient les opérateurs nullish et ou logique, qui ne permettent pas de fournir deux choix possibles.
