@@ -1,0 +1,50 @@
+question-1 = 3
+
+Pour afficher les bonbons disponibles, vous devez utiliser la boucle for car vous savez combien de bonbons afficher à l’écran. 
+Les autres boucles permettent de répéter du code, mais elles s'utilisent quand on ne sait pas combien de fois le répéter.
+
+question-2 = 2
+
+Dans cette situation, vous utiliserez la fonction sort car elle permet d’ordonner les éléments d’une liste en fonction d’un critère : 
+ici, la taille des bonbons. 
+Les autres fonctions ne sont pas en mesure de changer l’ordre des éléments.
+
+question-3 = 3
+
+La fonction filter permettra d’afficher uniquement les bonbons à base de chocolat. 
+Elle prend une fonction lambda comme premier argument. Cette fonction lambda doit retourner
+ une valeur booléenne avec un opérateur de comparaison comme le triple égal ===. 
+En revanche, les autres réponses gardent tous les éléments d’origine sans les filtrer.
+
+question-4 = 1
+
+Le code  prix.map(p => p * 1.2)  permet d’obtenir une nouvelle liste de prix.
+ La fonction map prend une fonction lambda comme premier argument. 
+Pour obtenir le prix avec la TVA, il faut multiplier par 1,2.
+
+question-5 = 2
+
+L’extrait de code aura pour conséquence d’ordonner les bonbons, du plus petit au plus grand. 
+En effet, la soustraction A - B donnera un nombre négatif si 
+A est plus petit que B. Comme il s’agit d’un nombre négatif, on placera A avant B. 
+Les éléments seront donc ordonnés par ordre croissant.
+
+question-6 = 3
+
+Vous devez supprimer le mot-clé return car ce dernier n’est pas autorisé 
+pour rédiger une fonction lambda sans les accolades. 
+Les autres réponses causeraient encore d’autres erreurs de syntaxe.
+
+question-7 = 2
+
+Pour effacer l’écran et régénérer les nouveaux éléments, vous devrez utiliser la propriété
+innerHTML sur l’élément qui porte la classe fiches-bonbons. En revanche, vous ne devez pas toucher à la 
+balise body car elle contient d’autres éléments d’interface que vous ne devez pas effacer.
+
+question-8 = 2
+
+Vous devez donner la constante bonbonsFiltres à la fonction genererBonbons, sinon la page va se 
+réafficher avec la liste de bonbons complète, et le filtre ne se fera pas. La propriété innerHTML 
+permet bien d’effacer l’écran, ce n’était pas une erreur.
+ Il faut bien appeler la fonction genererBonbons après la ligne document.querySelector, ce n’était pas une erreur non plus.
+
