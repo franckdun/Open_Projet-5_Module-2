@@ -1,19 +1,56 @@
 question 1 = 3
 
+Pour récupérer les données des colis, vous utiliserez le code :
+
+const colis = await fetch("http://api.top-livraisons.fr/colis").then(colis => colis.json());
+
+Vous devez prendre en compte plusieurs éléments lorsque vous faites une requête HTTP. Étant donné qu’il s’agit d’une opération asynchrone, vous devez :
+
+    écrire await avant fetch pour attendre que l’opération se termine avant de reprendre l’exécution de la ligne suivante ;
+    préciser le protocole HTTP ;
+    appeler la fonction json (et non body) sur l’objet colis.
+
+
 question 2 = 4
 
-question 3 =
+Pour réaliser l’appel à la fonction fetch, vous utiliserez le code :
 
-question 4 =
+const livreur = await fetch("http://api.top-livreurs.fr/livreurs/" + colis.livreurId).then(livreur => livreur.json());
 
-question 5 = 1
+Vous devez prendre en compte plusieurs éléments lorsque vous faites un appel à la fonction fetch :
+
+    Utiliser le mot-clé await.
+    Utiliser le protocole HTTP.
+    Utiliser la fonction json() plutôt que body.
+
+Par ailleurs, les ressources /colis/:id/livreur et /livreurs n’existent pas.
+
+question 3 = 2
+
+Pour régler ce problème, vous devez utiliser la fonction event.preventDefault qui empêche le rechargement de la page. La fonction stopPropagation a un effet sur le cycle de vie de l’événement dans le DOM, mais pas sur le rechargement de la page. Même en cas d’absence de l’attribut action, le formulaire reprendra l’URL de la page actuelle et rechargera donc quand même la page.
+
+question 4 = 3
+
+Le deuxième argument de la fonction fetch prend un objet qui doit contenir trois propriétés (lorsque le verbe HTTP est différent de GET) : method, headers et body. Le Content-Type se place à l’intérieur de la propriété headers, et non pas sur l’objet passé en argument à la fonction fetch. Le type correct est bien application/json et non pas text/json.
+
+question 5 = 2
+
+Vous devez faire précéder la fonction anonyme du mot-clé async pour activer la gestion des opérations asynchrones. De même, vous devez écrire le mot-clé await avant l’appel à la fonction fetch pour attendre la fin de l’opération asynchrone. Il ne faut pas confondre les deux mot-clés, async ne s'utilise qu'à gauche d’une déclaration de fonction.
 
 question 6 = 1
 
-question 7 =
+Le localStorage stocke les données sur l’appareil de l’utilisateur, c’est ce qui lui permet d’être accessible, même en cas d’absence de connexion à internet. Les autres solutions ne répondent pas à cette problématique.
 
-question 8 =
+question 7 = 2
 
-question 9 =
+La clé “colis” n’existe pas, vous obtiendrez donc la valeur null.
 
-question 10 =
+question 8 = 3
+
+Pour vider entièrement la liste des livreurs, vous devrez utiliser la fonction setItem avec les crochets :
+
+window.localStorage.setItem("livreurs", "[]");
+
+La première proposition qui utilise la fonction removeItem prend en argument la liste “livreurs”. Or, la fonction removeItem doit prendre en argument une chaîne de caractères. Cette proposition est donc fausse. La seule autre possibilité était de remplacer le contenu du localStorage avec une chaîne de caractères représentant une liste vide en JSON : les crochets ouvrant et fermant. La deuxième proposition setItem avec la valeur null est fausse, car la fonction setItem ne prend en argument que des chaînes de caractères.
+
+
