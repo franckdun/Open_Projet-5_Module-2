@@ -1,0 +1,47 @@
+question 1 = 1
+
+C’est vrai. Il est préférable de développer vous-même cette page dans cette situation, car il n’y a aucune difficulté à afficher des textes et une image.
+
+question 2 = 2 4
+
+Deux critères sont importants dans votre choix : la date de dernière mise à jour doit être récente, et le nombre de téléchargements élevé.
+
+En revanche, le site web de la librairie ne doit pas forcément proposer une page “Getting Started”, bien que beaucoup le fassent pour faciliter la vie des développeurs. De même, les besoins de Top Randos sont suffisamment simples pour qu’il n’y ait pas besoin de support technique. 
+
+question 3 = 4
+
+La librairie Leaflet correspond à notre besoin : la description nous indique qu’il s’agit d’une “carte interactive”. Les autres résultats ne sont pas pertinents car ils concernent des aspects techniques du JavaScript ou du fonctionnement d’autres librairies :
+
+    Map est un type de données en JavaScript ;
+    les source-maps sont utilisées après une compilation d’un code JavaScript ou SCSS ;
+    l'api-loader est utile dans le contexte d’une autre librairie que fournit Google Maps.
+
+
+question 4 = 1
+
+La commande npm init permet d’initialiser le projet et de créer le fichier package.json, qui servira à documenter les librairies dont on a besoin dans un projet. En revanche, le fichier package-lock.json ne se modifie jamais à la main. La commande npm install peut être lancée pour installer toutes les dépendances si le répertoire node_modules n’existe pas, mais elle nécessite d’avoir un projet déjà initialisé pour être utile. La commande mkdir n’est pas utile ici car vous mettez à jour un projet existant ; vous avez donc un répertoire qui contient déjà les fichiers du projet.
+ 
+question 5 = 2
+
+Le nom exact de la librairie est “leaflet”, il faut donc lancer la commande npm install leaflet, et non pas leaflet.js. En revanche, les gestionnaires de paquets vous évitent de télécharger et de gérer vos dépendances à la main, vous n’avez donc pas besoin de télécharger la librairie sur le site web. De même, la balise script est généralement utilisée pour importer la librairie dans le projet une fois qu’elle est installée, mais il vous faut d’abord l’installer.
+
+question 6 = 3
+
+Pour enregistrer l'ajout de la librairie dans l'historique du projet, vous devez ajouter le fichier package.json dans l’historique du projet. Le fichier package.json est modifié par la commande npm install pour enregistrer le nom de la librairie installée.
+
+En revanche :
+
+    le répertoire node_modules ne se versionne pas pour limiter la taille de l’historique Git
+    ce répertoire est automatiquement créé par la commande npm install, pas besoin de le faire vous-même
+    si vous devez manipuler l’historique Git, c’est qu’il est déjà initialisé, donc pas besoin de le faire vous-même non plus.
+
+
+question 7 = 2
+
+La documentation indique bien qu’il faut placer la balise script après la balise link. Les deux autres propositions de réponse disaient de mettre la balise script avant la balise link.
+
+question 8 = 1
+
+Vous devez utiliser le format GeoJSON : c’est le format utilisé par l’’association, et la librairie Leaflet sait afficher ce format. Les autres réponses ne sont donc pas correctes.
+
+
